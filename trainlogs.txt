@@ -1,0 +1,861 @@
+----------------------------------------------------------------------
+          Layer.Parameter                       Shape          Param#
+----------------------------------------------------------------------
+             conv0.weight               [64, 3, 3, 3]           1,728
+             conv1.weight              [64, 64, 3, 3]          36,864
+             conv2.weight              [64, 64, 3, 3]          36,864
+             conv1.weight              [64, 64, 3, 3]          36,864
+             conv2.weight              [64, 64, 3, 3]          36,864
+             conv1.weight             [128, 64, 3, 3]          73,728
+             conv2.weight            [128, 128, 3, 3]         147,456
+                 0.weight                   [128, 64]           8,192
+                 1.weight                       [128]             128
+                   1.bias                       [128]             128
+           1.running_mean                       [128]             128
+            1.running_var                       [128]             128
+    1.num_batches_tracked                          []             1.0
+             conv1.weight            [128, 128, 3, 3]         147,456
+             conv2.weight            [128, 128, 3, 3]         147,456
+             conv1.weight            [256, 128, 3, 3]         294,912
+             conv2.weight            [256, 256, 3, 3]         589,824
+                 0.weight                  [256, 128]          32,768
+                 1.weight                       [256]             256
+                   1.bias                       [256]             256
+           1.running_mean                       [256]             256
+            1.running_var                       [256]             256
+    1.num_batches_tracked                          []             1.0
+             conv1.weight            [256, 256, 3, 3]         589,824
+             conv2.weight            [256, 256, 3, 3]         589,824
+             conv1.weight            [512, 256, 3, 3]       1,179,648
+             conv2.weight            [512, 512, 3, 3]       2,359,296
+                 0.weight                  [512, 256]         131,072
+                 1.weight                       [512]             512
+                   1.bias                       [512]             512
+           1.running_mean                       [512]             512
+            1.running_var                       [512]             512
+    1.num_batches_tracked                          []             1.0
+             conv1.weight            [512, 512, 3, 3]       2,359,296
+             conv2.weight            [512, 512, 3, 3]       2,359,296
+----------------------------------------------------------------------
+
+Total params: 11,168,960
+
+Summaries dir: C:\Users\sree\Documents\SimCLR-Pytorch\experiments\2024-11-01_12-16-57\summaries
+
+--my_config: None
+--dataset: cifar10
+--dataset_path: None
+--model: resnet18
+--n_epochs: 120
+--finetune_epochs: 20
+--warmup_epochs: 10
+--batch_size: 256
+--learning_rate: 1.0
+--finetune_learning_rate: 0.1
+--weight_decay: 1e-06
+--finetune_weight_decay: 0.0
+--optimiser: lars
+--finetune_optimiser: sgd
+--patience: 100
+--temperature: 0.5
+--jitter_d: 0.5
+--jitter_p: 0.8
+--blur_sigma: [0.1, 2.0]
+--blur_p: 0.5
+--grey_p: 0.2
+--twocrop: True
+--load_checkpoint_dir: C:\Users\sree\Documents\SimCLR-Pytorch\experiments\2024-11-01_12-16-57\checkpoint.pt
+--distributed: True
+--finetune: False
+--supervised: False
+--class_names: ('plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
+--crop_dim: 32
+--n_channels: 3
+--n_classes: 10
+--summaries_dir: C:\Users\sree\Documents\SimCLR-Pytorch\experiments\2024-11-01_12-16-57\summaries
+--checkpoint_dir: C:\Users\sree\Documents\SimCLR-Pytorch\experiments\2024-11-01_12-16-57\checkpoint.pt
+
+pretrain/train: 45000 - valid: 5000 - test: 10000
+
+Epoch 1/120:
+
+
+[Train] loss: 6.1105
+
+Epoch 2/120:
+
+
+[Train] loss: 5.6580
+
+Epoch 3/120:
+
+
+[Train] loss: 5.3797
+
+Epoch 4/120:
+
+
+[Train] loss: 5.2623
+
+Epoch 5/120:
+
+
+[Train] loss: 5.1992
+
+Epoch 6/120:
+
+
+[Train] loss: 5.1458
+
+Epoch 7/120:
+
+
+[Train] loss: 5.0922
+
+Epoch 8/120:
+
+
+[Train] loss: 5.0484
+
+Epoch 9/120:
+
+
+[Train] loss: 5.0122
+
+Epoch 10/120:
+
+
+[Train] loss: 4.9896
+
+Epoch 11/120:
+
+
+[Train] loss: 4.9659
+
+Epoch 12/120:
+
+
+[Train] loss: 4.9449
+
+Epoch 13/120:
+
+
+[Train] loss: 4.9222
+
+Epoch 14/120:
+
+
+[Train] loss: 4.9067
+
+Epoch 15/120:
+
+
+[Train] loss: 4.8965
+
+Epoch 16/120:
+
+
+[Train] loss: 4.8814
+
+Epoch 17/120:
+
+
+[Train] loss: 4.8758
+
+Epoch 18/120:
+
+
+[Train] loss: 4.8691
+
+Epoch 19/120:
+
+
+[Train] loss: 4.8582
+
+Epoch 20/120:
+
+
+[Train] loss: 4.8520
+
+Epoch 21/120:
+
+
+[Train] loss: 4.8458
+
+Epoch 22/120:
+
+
+[Train] loss: 4.8405
+
+Epoch 23/120:
+
+
+[Train] loss: 4.8353
+
+Epoch 24/120:
+
+
+[Train] loss: 4.8277
+
+Epoch 25/120:
+
+
+[Train] loss: 4.8218
+
+Epoch 26/120:
+
+
+[Train] loss: 4.8147
+
+Epoch 27/120:
+
+
+[Train] loss: 4.8163
+
+Epoch 28/120:
+
+
+[Train] loss: 4.8115
+
+Epoch 29/120:
+
+
+[Train] loss: 4.8105
+
+Epoch 30/120:
+
+
+[Train] loss: 4.8053
+
+Epoch 31/120:
+
+
+[Train] loss: 4.8022
+
+Epoch 32/120:
+
+
+[Train] loss: 4.7998
+
+Epoch 33/120:
+
+
+[Train] loss: 4.7966
+
+Epoch 34/120:
+
+
+[Train] loss: 4.7877
+
+Epoch 35/120:
+
+
+[Train] loss: 4.7878
+
+Epoch 36/120:
+
+
+[Train] loss: 4.7870
+
+Epoch 37/120:
+
+
+[Train] loss: 4.7810
+
+Epoch 38/120:
+
+
+[Train] loss: 4.7786
+
+Epoch 39/120:
+
+
+[Train] loss: 4.7778
+
+Epoch 40/120:
+
+
+[Train] loss: 4.7783
+
+Epoch 41/120:
+
+
+[Train] loss: 4.7778
+
+Epoch 42/120:
+
+
+[Train] loss: 4.7748
+
+Epoch 43/120:
+
+
+[Train] loss: 4.7696
+
+Epoch 44/120:
+
+
+[Train] loss: 4.7677
+
+Epoch 45/120:
+
+
+[Train] loss: 4.7661
+
+Epoch 46/120:
+
+
+[Train] loss: 4.7641
+
+Epoch 47/120:
+
+
+[Train] loss: 4.7670
+
+Epoch 48/120:
+
+
+[Train] loss: 4.7574
+
+Epoch 49/120:
+
+
+[Train] loss: 4.7542
+
+Epoch 50/120:
+
+
+[Train] loss: 4.7578
+
+Epoch 51/120:
+
+
+[Train] loss: 4.7518
+
+Epoch 52/120:
+
+
+[Train] loss: 4.7524
+
+Epoch 53/120:
+
+
+[Train] loss: 4.7489
+
+Epoch 54/120:
+
+
+[Train] loss: 4.7485
+
+Epoch 55/120:
+
+
+[Train] loss: 4.7473
+
+Epoch 56/120:
+
+
+[Train] loss: 4.7430
+
+Epoch 57/120:
+
+
+[Train] loss: 4.7401
+
+Epoch 58/120:
+
+
+[Train] loss: 4.7389
+
+Epoch 59/120:
+
+
+[Train] loss: 4.7368
+
+Epoch 60/120:
+
+
+[Train] loss: 4.7387
+
+Epoch 61/120:
+
+
+[Train] loss: 4.7344
+
+Epoch 62/120:
+
+
+[Train] loss: 4.7341
+
+Epoch 63/120:
+
+
+[Train] loss: 4.7332
+
+Epoch 64/120:
+
+
+[Train] loss: 4.7330
+
+Epoch 65/120:
+
+
+[Train] loss: 4.7266
+
+Epoch 66/120:
+
+
+[Train] loss: 4.7263
+
+Epoch 67/120:
+
+
+[Train] loss: 4.7239
+
+Epoch 68/120:
+
+
+[Train] loss: 4.7260
+
+Epoch 69/120:
+
+
+[Train] loss: 4.7214
+
+Epoch 70/120:
+
+
+[Train] loss: 4.7214
+
+Epoch 71/120:
+
+
+[Train] loss: 4.7185
+
+Epoch 72/120:
+
+
+[Train] loss: 4.7181
+
+Epoch 73/120:
+
+
+[Train] loss: 4.7142
+
+Epoch 74/120:
+
+
+[Train] loss: 4.7130
+
+Epoch 75/120:
+
+
+[Train] loss: 4.7137
+
+Epoch 76/120:
+
+
+[Train] loss: 4.7132
+
+Epoch 77/120:
+
+
+[Train] loss: 4.7086
+
+Epoch 78/120:
+
+
+[Train] loss: 4.7101
+
+Epoch 79/120:
+
+
+[Train] loss: 4.7109
+
+Epoch 80/120:
+
+
+[Train] loss: 4.7081
+
+Epoch 81/120:
+
+
+[Train] loss: 4.7032
+
+Epoch 82/120:
+
+
+[Train] loss: 4.7035
+
+Epoch 83/120:
+
+
+[Train] loss: 4.7048
+
+Epoch 84/120:
+
+
+[Train] loss: 4.7022
+
+Epoch 85/120:
+
+
+[Train] loss: 4.7004
+
+Epoch 86/120:
+
+
+[Train] loss: 4.6950
+
+Epoch 87/120:
+
+
+[Train] loss: 4.6964
+
+Epoch 88/120:
+
+
+[Train] loss: 4.6928
+
+Epoch 89/120:
+
+
+[Train] loss: 4.6965
+
+Epoch 90/120:
+
+
+[Train] loss: 4.6975
+
+Epoch 91/120:
+
+
+[Train] loss: 4.6961
+
+Epoch 92/120:
+
+
+[Train] loss: 4.6928
+
+Epoch 93/120:
+
+
+[Train] loss: 4.6918
+
+Epoch 94/120:
+
+
+[Train] loss: 4.6948
+
+Epoch 95/120:
+
+
+[Train] loss: 4.6876
+
+Epoch 96/120:
+
+
+[Train] loss: 4.6880
+
+Epoch 97/120:
+
+
+[Train] loss: 4.6864
+
+Epoch 98/120:
+
+
+[Train] loss: 4.6849
+
+Epoch 99/120:
+
+
+[Train] loss: 4.6850
+
+Epoch 100/120:
+
+
+[Train] loss: 4.6839
+
+Epoch 101/120:
+
+
+[Train] loss: 4.6852
+
+Epoch 102/120:
+
+
+[Train] loss: 4.6859
+
+Epoch 103/120:
+
+
+[Train] loss: 4.6813
+
+Epoch 104/120:
+
+
+[Train] loss: 4.6795
+
+Epoch 105/120:
+
+
+[Train] loss: 4.6839
+
+Epoch 106/120:
+
+
+[Train] loss: 4.6825
+
+Epoch 107/120:
+
+
+[Train] loss: 4.6788
+
+Epoch 108/120:
+
+
+[Train] loss: 4.6789
+
+Epoch 109/120:
+
+
+[Train] loss: 4.6777
+
+Epoch 110/120:
+
+
+[Train] loss: 4.6776
+
+Epoch 111/120:
+
+
+[Train] loss: 4.6746
+
+Epoch 112/120:
+
+
+[Train] loss: 4.6788
+
+Epoch 113/120:
+
+
+[Train] loss: 4.6762
+
+Epoch 114/120:
+
+
+[Train] loss: 4.6778
+
+Epoch 115/120:
+
+
+[Train] loss: 4.6761
+
+Epoch 116/120:
+
+
+[Train] loss: 4.6796
+
+Epoch 117/120:
+
+
+[Train] loss: 4.6774
+
+Epoch 118/120:
+
+
+[Train] loss: 4.6776
+
+Epoch 119/120:
+
+
+[Train] loss: 4.6744
+
+Epoch 120/120:
+
+
+[Train] loss: 4.6822
+
+Epoch 1/20:
+
+
+[Finetune] loss: 5.5705,	 acc: 0.6630, 	 acc_top5: 0.9394
+
+
+[valid] loss: 7.1433,	 acc: 0.6102,	 acc_top5: 0.9535 
+
+
+Epoch 2/20:
+
+
+[Finetune] loss: 3.5494,	 acc: 0.6757, 	 acc_top5: 0.9364
+
+
+[valid] loss: 4.5303,	 acc: 0.6671,	 acc_top5: 0.9613 
+
+
+Epoch 3/20:
+
+
+[Finetune] loss: 3.5987,	 acc: 0.6789, 	 acc_top5: 0.9410
+
+
+[valid] loss: 4.3396,	 acc: 0.6931,	 acc_top5: 0.9618 
+
+
+Epoch 4/20:
+
+
+[Finetune] loss: 3.3252,	 acc: 0.6835, 	 acc_top5: 0.9400
+
+
+[valid] loss: 5.6498,	 acc: 0.7276,	 acc_top5: 0.9488 
+
+
+Epoch 5/20:
+
+
+[Finetune] loss: 3.0181,	 acc: 0.6863, 	 acc_top5: 0.9424
+
+
+[valid] loss: 3.6143,	 acc: 0.7395,	 acc_top5: 0.9607 
+
+
+Epoch 6/20:
+
+
+[Finetune] loss: 2.8082,	 acc: 0.6854, 	 acc_top5: 0.9432
+
+
+[valid] loss: 6.5336,	 acc: 0.7284,	 acc_top5: 0.9155 
+
+
+Epoch 7/20:
+
+
+[Finetune] loss: 2.5625,	 acc: 0.6933, 	 acc_top5: 0.9442
+
+
+[valid] loss: 4.0483,	 acc: 0.7259,	 acc_top5: 0.9710 
+
+
+Epoch 8/20:
+
+
+[Finetune] loss: 2.1790,	 acc: 0.6941, 	 acc_top5: 0.9486
+
+
+[valid] loss: 3.4204,	 acc: 0.6871,	 acc_top5: 0.9387 
+
+
+Epoch 9/20:
+
+
+[Finetune] loss: 1.9686,	 acc: 0.7007, 	 acc_top5: 0.9506
+
+
+[valid] loss: 3.7449,	 acc: 0.6484,	 acc_top5: 0.9324 
+
+
+Epoch 10/20:
+
+
+[Finetune] loss: 1.7011,	 acc: 0.7046, 	 acc_top5: 0.9547
+
+
+[valid] loss: 1.7620,	 acc: 0.7299,	 acc_top5: 0.9706 
+
+
+Epoch 11/20:
+
+
+[Finetune] loss: 1.3861,	 acc: 0.7150, 	 acc_top5: 0.9608
+
+
+[valid] loss: 3.1192,	 acc: 0.6398,	 acc_top5: 0.9552 
+
+
+Epoch 12/20:
+
+
+[Finetune] loss: 1.2267,	 acc: 0.7206, 	 acc_top5: 0.9646
+
+
+[valid] loss: 3.1634,	 acc: 0.6632,	 acc_top5: 0.9324 
+
+
+Epoch 13/20:
+
+
+[Finetune] loss: 1.0157,	 acc: 0.7312, 	 acc_top5: 0.9707
+
+
+[valid] loss: 1.2474,	 acc: 0.7510,	 acc_top5: 0.9799 
+
+
+Epoch 14/20:
+
+
+[Finetune] loss: 0.8554,	 acc: 0.7423, 	 acc_top5: 0.9764
+
+
+[valid] loss: 1.0742,	 acc: 0.7531,	 acc_top5: 0.9819 
+
+
+Epoch 15/20:
+
+
+[Finetune] loss: 0.7796,	 acc: 0.7506, 	 acc_top5: 0.9790
+
+
+[valid] loss: 1.0047,	 acc: 0.7467,	 acc_top5: 0.9840 
+
+
+Epoch 16/20:
+
+
+[Finetune] loss: 0.7412,	 acc: 0.7557, 	 acc_top5: 0.9792
+
+
+[valid] loss: 0.5541,	 acc: 0.8207,	 acc_top5: 0.9907 
+
+
+Epoch 17/20:
+
+
+[Finetune] loss: 0.7111,	 acc: 0.7617, 	 acc_top5: 0.9805
+
+
+[valid] loss: 0.5425,	 acc: 0.8224,	 acc_top5: 0.9912 
+
+
+Epoch 18/20:
+
+
+[Finetune] loss: 0.6879,	 acc: 0.7669, 	 acc_top5: 0.9812
+
+
+[valid] loss: 0.5280,	 acc: 0.8267,	 acc_top5: 0.9899 
+
+
+Epoch 19/20:
+
+
+[Finetune] loss: 0.6822,	 acc: 0.7677, 	 acc_top5: 0.9821
+
+
+[valid] loss: 0.5139,	 acc: 0.8261,	 acc_top5: 0.9905 
+
+
+Epoch 20/20:
+
+
+[Finetune] loss: 0.6736,	 acc: 0.7686, 	 acc_top5: 0.9823
+
+
+[valid] loss: 0.5116,	 acc: 0.8277,	 acc_top5: 0.9903 
+
+
+[test] loss: 0.5079,	 acc: 0.8227,	 acc_top5: 0.9934 
+

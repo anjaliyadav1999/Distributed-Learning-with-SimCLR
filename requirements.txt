@@ -1,0 +1,7 @@
+datasets
+torchvision
+configargparse
+torch
+tensorboard
+numpy
+tqdm
